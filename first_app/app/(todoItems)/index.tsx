@@ -20,6 +20,7 @@ export default function TodoItemsScreen() {
     setItems(response);
   }
 
+  //can use useEffect, then the data will only be loaded once
   useFocusEffect(
     useCallback(() => {
       loadItems();
